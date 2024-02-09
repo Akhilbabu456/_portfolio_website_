@@ -1,3 +1,40 @@
+:root{
+    --header-height: 3.5rem;
+
+    --first-hue: 250;
+    --sat: 66%;
+    --lig: 75%;
+    --second-hue: 219;
+
+    --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+
+    --title-color: hsl(var(--second-hue), 15%, 95%);
+    --text-color: hsl(var(--second-hue), 8%, 75%);
+    --text-color-light: hsl(var(--second-hue), 4%, 55%);
+
+    --body-color: hsl(var(--second-hue), 48%, 8%);
+    --container-color: hsl(var(--second-hue), 32%, 12%);
+
+
+    --body-font: 'Rubik', sans-serif;
+    --biggest-font-size: 1.75rem;
+    --h1-font-size: 1.5rem; 
+    --h2-font-size: 1.25rem; 
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem; 
+    --smaller-font-size: 0.75rem; 
+    --tiny-font-size: 0.625rem;
+    
+    --font-medium: 500;
+    --font-semibold: 600;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -610,6 +647,69 @@ span{
     text-align: center;
     font-size: 16px;
     color: #fff;
+}
+body.light-theme{
+    --title-color: hsl(var(--second-hue), 15%, 15%);
+    --text-color: hsl(var(--second-hue), 8%, 35%);
+    --body-color: hsl(var(--second-hue), 100%, 99%);
+    --container-color: #fff;
+}
+
+.light-theme .scroll-header{
+    box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
+}
+
+.light-theme .nav-menu{
+    background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+}
+
+.light-theme .section-subtitle{
+    color: var(--text-color);
+}
+
+.light-theme .home-social-link{
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.light-theme .home-socials::after,
+.light-theme .footer-social-link{
+    background-color: var(--title-color);
+}
+
+.light-theme .home-social-link,
+.light-theme .home-scroll,
+.light-theme .button,
+.light-theme .button:hover,
+.light-theme .active-work,
+.light-theme .test-card,
+.light-theme .footer-title,
+.light-theme .footer-link,
+.light-theme .footer-copy{
+    color: var(--title-color);
+}
+
+.light-theme .about-box{
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.light-theme .skills-content,
+.light-theme .service-card,
+.light-theme .work-card,
+.light-theme .contact-card,
+.light-theme .test-card{
+    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.light-theme::-webkit-scrollbar{
+    background-color: hsla(var(--second-hue), 8%, 66%);
+}
+
+.light-theme::-webkit-scrollbar-thumb{
+    background-color: hsla(var(--second-hue), 8%, 54%);
+}
+
+.light-theme::-webkit-scrollbar-thumb:hover{
+    background-color: hsla(var(--second-hue), 8%, 44%);
 }
 
 @media(max-width:1200px){

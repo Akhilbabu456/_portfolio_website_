@@ -94,6 +94,7 @@ span{
                 0 0 100px #14ff6a;
 }
 .home-content p{
+    text-align: justify;
     font-size: 1.8rem;
     font-weight: 500;
 }

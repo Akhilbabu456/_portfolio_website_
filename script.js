@@ -22,6 +22,7 @@ menuIcon.onclick= ()=>{
     menuIcon.classList.toggle('fa-x')
     navbar.classList.toggle('active')
 }
+
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
